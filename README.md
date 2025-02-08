@@ -15,6 +15,10 @@ Sets upa a Node.js environment in a container, copies application code and depen
 ```sh
 sudo docker build -t my-docker-app .
 ```
+## Final Output! 
+![built docker image](/img/built_docker_image.jpg)
+
+![Running docker container](/img/running_docker_container.jpg)
 
 ## Run Docker Container
 ```sh
@@ -29,4 +33,9 @@ After building the Docker Image, run the following code.
 sudo usermod -aG docker username
 ```
 
+> **Error:** docker: driver failed programming external connectivity on endpoint webserver
+
+```sh
+service docker restart
+```
 Then run the Docker container. 
